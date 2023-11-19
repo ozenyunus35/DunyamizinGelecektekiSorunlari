@@ -1,0 +1,100 @@
+@mixin fontSize($size) {
+    @if $size==hood {
+        font-size: 28px;
+    }
+    @else if $size==mhood {
+        font-size: 23px;
+    }
+    @else if $size==shood {
+        font-size: 16px;
+    }
+    @else if $size==txt {
+        font-size: 22px;
+    }
+    @else if $size==mtxt {
+        font-size: 18px;
+    }
+    @else if $size==stxt {
+        font-size: 14px;
+    }
+    @include mediaQuery(1200px) {
+        @if $size==hood {
+            font-size: 26px;
+        }
+        @else if $size==mhood {
+            font-size: 21px;
+        }
+        @else if $size==shood {
+            font-size: 14px;
+        }
+        @else if $size==txt {
+            font-size: 20px;
+        }
+        @else if $size==mtxt {
+            font-size: 16px;
+        }
+        @else if $size==stxt {
+            font-size: 12px;
+        }
+    }
+    @include mediaQuery(992px) {
+        @if $size==hood {
+            font-size: 25px;
+        }
+        @else if $size==mhood {
+            font-size: 20px;
+        }
+        @else if $size==shood {
+            font-size: 13px;
+        }
+        @else if $size==txt {
+            font-size: 19px;
+        }
+        @else if $size==mtxt {
+            font-size: 15px;
+        }
+        @else if $size==stxt {
+            font-size: 11px;
+        }
+    }
+    @include mediaQuery(768px) {
+        @if $size==hood {
+            font-size: 24px;
+        }
+        @else if $size==mhood {
+            font-size: 19px;
+        }
+        @else if $size==shood {
+            font-size: 12px;
+        }
+        @else if $size==txt {
+            font-size: 18px;
+        }
+        @else if $size==mtxt {
+            font-size: 14px;
+        }
+        @else if $size==stxt {
+            font-size: 10px;
+        }
+    }
+    @include mediaQuery(480px) {
+        @if $size==hood {
+            font-size: 22px;
+        }
+        @else if $size==mhood {
+            font-size: 17px;
+        }
+        @else if $size==shood {
+            font-size: 10px;
+        }
+        @else if $size==txt {
+            font-size: 16px;
+        }
+        @else if $size==mtxt {
+            font-size: 12px;
+        }
+        @else if $size==stxt {
+            font-size: 8px;
+        }
+    }
+}

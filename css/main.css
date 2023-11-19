@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+a,
+button {
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #C6D6E6;
+  position: relative;
+}
+main .map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #C6D6E6;
+}
+main .map svg g {
+  cursor: pointer;
+}
+main .map svg g .continent-name {
+  fill: #E8E8E8;
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  main .map svg g .continent-name {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .map svg g .continent-name {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .map svg g .continent-name {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .map svg g .continent-name {
+    font-size: 22px;
+  }
+}
+main .map svg g#oceans {
+  cursor: default;
+}
+main .map svg g#oceans .oceans-name tspan {
+  fill: #333333;
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+  main .map svg g#oceans .oceans-name tspan {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .map svg g#oceans .oceans-name tspan {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .map svg g#oceans .oceans-name tspan {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .map svg g#oceans .oceans-name tspan {
+    font-size: 22px;
+  }
+}
+main .map svg g#oceania .oceania-part {
+  fill: #810E21;
+  stroke: #000000;
+}
+main .map svg g#oceania:hover .oceania-part {
+  fill: #9C021B;
+}
+main .map svg g#asia .asia-part {
+  fill: #562D71;
+  stroke: #000000;
+}
+main .map svg g#asia:hover .asia-part {
+  fill: #673588;
+}
+main .map svg g#africa .africa-part {
+  fill: #1C453D;
+  stroke: #000000;
+}
+main .map svg g#europe .europe-part {
+  fill: #6F1664;
+  stroke: #000000;
+}
+main .map svg g#northAmerica .northAmerica-part {
+  fill: #0E4929;
+  stroke: #000000;
+}
+main .map svg g#southAmerica .southAmerica-part {
+  fill: #752000;
+  stroke: #000000;
+}
+main .side-panel {
+  position: fixed;
+  top: 0;
+  right: -50vw;
+  z-index: 99;
+  display: flex;
+}
+main .side-panel .categories {
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 50px;
+}
+main .side-panel .categories span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  border: 1px solid #333333;
+  border-radius: 10px 0 0 10px;
+  background: #E8E8E8;
+}
+main .side-panel .categories span svg {
+  font-size: 28px;
+  fill: #333333;
+}
+@media screen and (max-width: 1200px) {
+  main .side-panel .categories span svg {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .side-panel .categories span svg {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .side-panel .categories span svg {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .side-panel .categories span svg {
+    font-size: 22px;
+  }
+}
+main .side-panel .categories span#problem {
+  display: none;
+}
+main .side-panel .categories span.active {
+  border-right: 0;
+}
+main .side-panel .content {
+  width: 50vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #E8E8E8;
+  padding: 30px;
+}
+main .side-panel .content .content-problem {
+  display: none;
+}
+main .side-panel .content .content-problem div {
+  display: none;
+}
+main .side-panel.active {
+  right: 0;
+}
+main.continent .map {
+  width: 50vw;
+}
+main.continent .side-panel .categories #problem {
+  display: flex;
+}
+main.continent .side-panel .content .content-problem {
+  display: block;
+}
+main.continent .side-panel .content .content-article {
+  display: none;
+}
+main.continent.oceania .side-panel .content .content-problem-oceania {
+  display: block;
+}
+main.continent.asia .side-panel .content .content-problem-asia {
+  display: block;
+}
+main.continent.africa .side-panel .content .content-problem-africa {
+  display: block;
+}
+main.continent.europe .side-panel .content .content-problem-europe {
+  display: block;
+}
+main.continent.northAmerica .side-panel .content .content-problem-northAmerica {
+  display: block;
+}
+main.continent.southAmerica .side-panel .content .content-problem-southAmerica {
+  display: block;
+}/*# sourceMappingURL=main.css.map */

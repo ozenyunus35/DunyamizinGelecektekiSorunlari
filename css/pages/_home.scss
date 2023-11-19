@@ -1,0 +1,213 @@
+    main {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background-color: map-get($color, "sea");
+        position: relative;
+        .map {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100%;
+            background-color: map-get($color, "sea");
+            svg {
+                g {
+                    cursor: pointer;
+                    .continent-name {
+                        fill: map-get($color, "white");
+                        @include fontSize(hood);
+                        font-weight: map-get($font-weight, "b");
+                    }
+                    &#oceans {
+                        cursor: default;
+                        .oceans-name {
+                            tspan {
+                                fill: map-get($color, "ocean-name");
+                                @include fontSize(hood);
+                                font-weight: map-get($font-weight, "b");
+                            }
+                        }
+                    }
+                    &#oceania {
+                        .oceania-part {
+                            fill: map-get($color, "oceania");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                        &:hover {
+                            .oceania-part {
+                                fill: map-get($color, "oceania-h");
+                            }
+                        }
+                    }
+                    &#asia {
+                        .asia-part {
+                            fill: map-get($color, "asia");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                        &:hover {
+                            .asia-part {
+                                fill: map-get($color, "asia-h");
+                            }
+                        }
+                    }
+                    &#africa {
+                        .africa-part {
+                            fill: map-get($color, "africa");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                    }
+                    &#europe {
+                        .europe-part {
+                            fill: map-get($color, "europe");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                    }
+                    &#northAmerica {
+                        .northAmerica-part {
+                            fill: map-get($color, "northAmerica");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                    }
+                    &#southAmerica {
+                        .southAmerica-part {
+                            fill: map-get($color, "southAmerica");
+                            stroke: map-get($color, "black");
+                        }
+                        .continent-name {}
+                    }
+                }
+            }
+        }
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: -50vw;
+            z-index: 99;
+            display: flex;
+            .categories {
+                display: flex;
+                flex-direction: column;
+                height: fit-content;
+                margin-top: 50px;
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    cursor: pointer;
+                    border: 1px solid map-get($color, "ocean-name");
+                    border-radius: 10px 0 0 10px;
+                    background: map-get($color, "white");
+                    svg {
+                        @include fontSize(hood);
+                        fill: map-get($color, "ocean-name");
+                    }
+                    &#problem {
+                        display: none;
+                    }
+                    &#article {}
+                    &.active {
+                        border-right: 0;
+                    }
+                }
+            }
+            .content {
+                width: 50vw;
+                height: 100vh;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                background-color: map-get($color, "white");
+                padding: 30px;
+                .content-problem {
+                    display: none;
+                    div {
+                        display: none;
+                    }
+                }
+                .content-article {}
+            }
+            &.active {
+                right: 0;
+            }
+        }
+        &.continent {
+            .map {
+                width: 50vw;
+            }
+            .side-panel {
+                .categories {
+                    #problem {
+                        display: flex;
+                    }
+                }
+                .content {
+                    .content-problem {
+                        display: block;
+                    }
+                    .content-article {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.continent.oceania {
+            .side-panel {
+                .content {
+                    .content-problem-oceania {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.continent.asia {
+            .side-panel {
+                .content {
+                    .content-problem-asia {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.continent.africa {
+            .side-panel {
+                .content {
+                    .content-problem-africa {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.continent.europe {
+            .side-panel {
+                .content {
+                    .content-problem-europe {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.continent.northAmerica {
+            .side-panel {
+                .content {
+                    .content-problem-northAmerica {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.continent.southAmerica {
+            .side-panel {
+                .content {
+                    .content-problem-southAmerica {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,69 @@
+* {
+    @include reset
+}
+
+body {
+    font-family: $font;
+}
+
+a,
+button {
+    border: none;
+    cursor: pointer;
+}
+
+// ::selection {
+//     color: rgb(15, 15, 75);
+//     background-color: map-get($color, "orange");
+// }
+// Scroll
+// body {
+//     &::-webkit-scrollbar {
+//         width: 7px;
+//     }
+//     &::-webkit-scrollbar-track {
+//         background: map-get($color, "white");
+//     }
+//     &::-webkit-scrollbar-thumb {
+//         background: map-get($color, "orange");
+//         border-radius: 10px;
+//     }
+//     &.dark {
+//         &::-webkit-scrollbar-track {
+//             background: map-get($color, "black");
+//         }
+//     }
+// }
+// Cursor
+// body {
+//     cursor: map-get($cursor-default, "l-default"), auto;
+//     a,
+//     button {
+//         cursor: map-get($cursor-link, "l-link"), pointer;
+//     }
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5,
+//     h6,
+//     p {
+//         cursor: map-get($cursor-text, "l-text"), auto;
+//     }
+//     &.dark {
+//         cursor: map-get($cursor-default, "d-default"), auto;
+//         a,
+//         button {
+//             cursor: map-get($cursor-link, "d-link"), pointer;
+//         }
+//         h1,
+//         h2,
+//         h3,
+//         h4,
+//         h5,
+//         h6,
+//         p {
+//             cursor: map-get($cursor-text, "d-text"), auto;
+//         }
+//     }
+// }
