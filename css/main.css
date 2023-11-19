@@ -29,8 +29,12 @@ main .map {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: #C6D6E6;
+}
+main .map svg {
+  width: 100%;
+  height: 100%;
 }
 main .map svg g {
   cursor: pointer;
