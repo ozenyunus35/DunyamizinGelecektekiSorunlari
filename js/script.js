@@ -1,17 +1,3 @@
-// $('.side-panel .categories span').click(function(event) {
-//     if (event.target.id != "") {
-//         $('.side-panel .categories span').removeClass("active")
-//         $("#" + event.target.id).addClass("active")
-//     } else {
-//         $('.side-panel .categories span').removeClass("active")
-//         $(event.target).parent().parent().addClass("active")
-//     }
-//     $("main").addClass("active")
-// })
-// $(".map svg g").click(function(event) {
-//     console.log(event.relatedTarget)
-// })
-
 $('.side-panel .categories span').click(function() {
     if ($(this).hasClass("active")) {
         $(this).removeClass("active")
@@ -39,5 +25,15 @@ $(".map svg g").click(function() {
             $("main .side-panel span").removeClass("active")
             $("main .side-panel #problem").addClass("active")
         }
+    }
+    if ($("main").hasClass("continent")) {
+        $(".map svg g").css("display", "none")
+        $(this).css("display", "block")
+        let bbox = this.getBBox();
+        $(".map #svg").attr("viewBox", `${bbox.x} ${bbox.y} ${bbox.width} ${bbox.height}`);
+
+    } else {
+        $(".map svg g").css("display", "block")
+        $(".map #svg").attr("viewBox", `0 0 1920 1080`);
     }
 })

@@ -31,6 +31,7 @@ main .map {
   width: 100vw;
   height: 100vh;
   background-color: #C6D6E6;
+  transition: 500ms ease-in-out;
 }
 main .map svg {
   width: 100%;
@@ -95,32 +96,56 @@ main .map svg g#oceans .oceans-name tspan {
 main .map svg g#oceania .oceania-part {
   fill: #810E21;
   stroke: #000000;
+  transition: 400ms ease-in-out;
 }
 main .map svg g#oceania:hover .oceania-part {
-  fill: #9C021B;
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .map svg g#asia .asia-part {
   fill: #562D71;
   stroke: #000000;
+  transition: 400ms ease-in-out;
 }
 main .map svg g#asia:hover .asia-part {
-  fill: #673588;
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .map svg g#africa .africa-part {
   fill: #1C453D;
   stroke: #000000;
+  transition: 400ms ease-in-out;
+}
+main .map svg g#africa:hover .africa-part {
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .map svg g#europe .europe-part {
   fill: #6F1664;
   stroke: #000000;
+  transition: 400ms ease-in-out;
+}
+main .map svg g#europe:hover .europe-part {
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .map svg g#northAmerica .northAmerica-part {
   fill: #0E4929;
   stroke: #000000;
+  transition: 400ms ease-in-out;
+}
+main .map svg g#northAmerica:hover .northAmerica-part {
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .map svg g#southAmerica .southAmerica-part {
   fill: #752000;
   stroke: #000000;
+  transition: 400ms ease-in-out;
+}
+main .map svg g#southAmerica:hover .southAmerica-part {
+  fill: #0000D1;
+  stroke: #C6D6E6;
 }
 main .side-panel {
   position: fixed;
@@ -128,6 +153,7 @@ main .side-panel {
   right: -50vw;
   z-index: 99;
   display: flex;
+  transition: 500ms ease-in-out;
 }
 main .side-panel .categories {
   display: flex;

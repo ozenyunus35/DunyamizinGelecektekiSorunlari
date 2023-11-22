@@ -11,6 +11,7 @@
             width: 100vw;
             height: 100vh;
             background-color: map-get($color, "sea");
+            transition: 500ms ease-in-out;
             svg {
                 width: 100%;
                 height: 100%;
@@ -35,11 +36,13 @@
                         .oceania-part {
                             fill: map-get($color, "oceania");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
                         &:hover {
                             .oceania-part {
-                                fill: map-get($color, "oceania-h");
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
                             }
                         }
                     }
@@ -47,11 +50,13 @@
                         .asia-part {
                             fill: map-get($color, "asia");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
                         &:hover {
                             .asia-part {
-                                fill: map-get($color, "asia-h");
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
                             }
                         }
                     }
@@ -59,29 +64,57 @@
                         .africa-part {
                             fill: map-get($color, "africa");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
+                        &:hover {
+                            .africa-part {
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
+                            }
+                        }
                     }
                     &#europe {
                         .europe-part {
                             fill: map-get($color, "europe");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
+                        &:hover {
+                            .europe-part {
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
+                            }
+                        }
                     }
                     &#northAmerica {
                         .northAmerica-part {
                             fill: map-get($color, "northAmerica");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
+                        &:hover {
+                            .northAmerica-part {
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
+                            }
+                        }
                     }
                     &#southAmerica {
                         .southAmerica-part {
                             fill: map-get($color, "southAmerica");
                             stroke: map-get($color, "black");
+                            transition: 400ms ease-in-out;
                         }
                         .continent-name {}
+                        &:hover {
+                            .southAmerica-part {
+                                fill: map-get($color, "continent-h");
+                                stroke: map-get($color, "sea");
+                            }
+                        }
                     }
                 }
             }
@@ -92,6 +125,7 @@
             right: -50vw;
             z-index: 99;
             display: flex;
+            transition: 500ms ease-in-out;
             .categories {
                 display: flex;
                 flex-direction: column;
