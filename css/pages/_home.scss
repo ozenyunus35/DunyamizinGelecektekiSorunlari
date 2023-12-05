@@ -29,6 +29,7 @@
                                 fill: map-get($color, "ocean-name");
                                 @include fontSize(hood);
                                 font-weight: map-get($font-weight, "b");
+                                @include notSelection;
                             }
                         }
                     }
@@ -38,7 +39,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .oceania-part {
                                 fill: map-get($color, "continent-h");
@@ -52,7 +55,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .asia-part {
                                 fill: map-get($color, "continent-h");
@@ -66,7 +71,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .africa-part {
                                 fill: map-get($color, "continent-h");
@@ -80,7 +87,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .europe-part {
                                 fill: map-get($color, "continent-h");
@@ -94,7 +103,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .northAmerica-part {
                                 fill: map-get($color, "continent-h");
@@ -108,7 +119,9 @@
                             stroke: map-get($color, "black");
                             transition: 400ms ease-in-out;
                         }
-                        .continent-name {}
+                        .continent-name {
+                            @include notSelection;
+                        }
                         &:hover {
                             .southAmerica-part {
                                 fill: map-get($color, "continent-h");

@@ -1,0 +1,15 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    background-color: map-get($color, "sea");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    dotlottie-player {
+        width: 20%;
+    }
+}

@@ -17,6 +17,22 @@ button {
   cursor: pointer;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #C6D6E6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#preloader dotlottie-player {
+  width: 20%;
+}
+
 main {
   width: 100vw;
   height: 100vh;
@@ -72,6 +88,9 @@ main .map svg g#oceans .oceans-name tspan {
   fill: #333333;
   font-size: 28px;
   font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 @media screen and (max-width: 1200px) {
   main .map svg g#oceans .oceans-name tspan {
@@ -98,6 +117,11 @@ main .map svg g#oceania .oceania-part {
   stroke: #000000;
   transition: 400ms ease-in-out;
 }
+main .map svg g#oceania .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
 main .map svg g#oceania:hover .oceania-part {
   fill: #0000D1;
   stroke: #C6D6E6;
@@ -106,6 +130,11 @@ main .map svg g#asia .asia-part {
   fill: #562D71;
   stroke: #000000;
   transition: 400ms ease-in-out;
+}
+main .map svg g#asia .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 main .map svg g#asia:hover .asia-part {
   fill: #0000D1;
@@ -116,6 +145,11 @@ main .map svg g#africa .africa-part {
   stroke: #000000;
   transition: 400ms ease-in-out;
 }
+main .map svg g#africa .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
 main .map svg g#africa:hover .africa-part {
   fill: #0000D1;
   stroke: #C6D6E6;
@@ -124,6 +158,11 @@ main .map svg g#europe .europe-part {
   fill: #6F1664;
   stroke: #000000;
   transition: 400ms ease-in-out;
+}
+main .map svg g#europe .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 main .map svg g#europe:hover .europe-part {
   fill: #0000D1;
@@ -134,6 +173,11 @@ main .map svg g#northAmerica .northAmerica-part {
   stroke: #000000;
   transition: 400ms ease-in-out;
 }
+main .map svg g#northAmerica .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
 main .map svg g#northAmerica:hover .northAmerica-part {
   fill: #0000D1;
   stroke: #C6D6E6;
@@ -142,6 +186,11 @@ main .map svg g#southAmerica .southAmerica-part {
   fill: #752000;
   stroke: #000000;
   transition: 400ms ease-in-out;
+}
+main .map svg g#southAmerica .continent-name {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
 }
 main .map svg g#southAmerica:hover .southAmerica-part {
   fill: #0000D1;

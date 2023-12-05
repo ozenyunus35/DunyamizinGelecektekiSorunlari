@@ -3,12 +3,16 @@ $('.side-panel .categories span').click(function() {
         $(this).removeClass("active")
         $("main .side-panel").removeClass("active")
         $("main").removeClass()
+        $(".map svg g").css("display", "block")
+        $(".map #svg").attr("viewBox", `0 0 1920 1080`);
 
     } else {
         $('.side-panel .categories span').removeClass("active")
         $(this).addClass("active")
         $("main .side-panel").addClass("active")
         $("main").removeClass()
+        $(".map svg g").css("display", "block")
+        $(".map #svg").attr("viewBox", `0 0 1920 1080`);
     }
 });
 
@@ -37,3 +41,8 @@ $(".map svg g").click(function() {
         $(".map #svg").attr("viewBox", `0 0 1920 1080`);
     }
 })
+
+// Preloader
+$(window).on('load', function() {
+    $('#preloader').hide();
+});
