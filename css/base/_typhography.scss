@@ -8,6 +8,9 @@
     @else if $size==shood {
         font-size: 16px;
     }
+    @else if $size==customHood {
+        font-size: 34px;
+    }
     @else if $size==txt {
         font-size: 22px;
     }

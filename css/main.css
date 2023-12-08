@@ -17,6 +17,16 @@ button {
   cursor: pointer;
 }
 
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+.content::-webkit-scrollbar-track {
+  background: #C6D6E6;
+}
+.content::-webkit-scrollbar-thumb {
+  background: #34BCC2;
+}
+
 #preloader {
   position: fixed;
   top: 0;
@@ -257,13 +267,125 @@ main .side-panel .content {
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: #E8E8E8;
-  padding: 30px;
+  padding: 75px 80px;
 }
 main .side-panel .content .content-problem {
   display: none;
 }
 main .side-panel .content .content-problem div {
   display: none;
+}
+main .side-panel .content .content-problem div h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 40px;
+}
+main .side-panel .content .content-problem div .select-years {
+  margin-bottom: 30px;
+}
+main .side-panel .content .content-problem div .select-years input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-radius: 15px;
+  height: 6px;
+  background: #C6D6E6;
+}
+main .side-panel .content .content-problem div .select-years input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-image: url("../../img/favicon.ico");
+  background-size: cover;
+  border-radius: 50%;
+}
+main .side-panel .content .content-problem div .select-years input[type=range]::-moz-range-thumb {
+  height: 30px;
+  width: 30px;
+  background-image: url("../../img/favicon.ico");
+  background-size: cover;
+  border-radius: 50%;
+}
+main .side-panel .content .content-problem div .select-years .sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+  flex-direction: column;
+  writing-mode: vertical-lr;
+  width: 100%;
+  margin-top: 10px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+main .side-panel .content .content-problem div .select-years .sliderticks span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+}
+@media screen and (max-width: 1200px) {
+  main .side-panel .content .content-problem div .select-years .sliderticks span {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .side-panel .content .content-problem div .select-years .sliderticks span {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .side-panel .content .content-problem div .select-years .sliderticks span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .side-panel .content .content-problem div .select-years .sliderticks span {
+    font-size: 12px;
+  }
+}
+main .side-panel .content .content-problem div .charts {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
+main .side-panel .content .content-problem div .charts .chart {
+  width: 100%;
+}
+main .side-panel .content .content-problem div .charts .chart h3 {
+  font-size: 23px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  main .side-panel .content .content-problem div .charts .chart h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .side-panel .content .content-problem div .charts .chart h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .side-panel .content .content-problem div .charts .chart h3 {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .side-panel .content .content-problem div .charts .chart h3 {
+    font-size: 17px;
+  }
+}
+main .side-panel .content .content-problem div .charts .chart .time {
+  display: flex;
 }
 main .side-panel.active {
   right: 0;
@@ -283,18 +405,54 @@ main.continent .side-panel .content .content-article {
 main.continent.oceania .side-panel .content .content-problem-oceania {
   display: block;
 }
+main.continent.oceania .side-panel .content .content-problem-oceania div {
+  display: block;
+}
+main.continent.oceania .side-panel .content .content-problem-oceania div .sliderticks {
+  display: flex;
+}
 main.continent.asia .side-panel .content .content-problem-asia {
   display: block;
+}
+main.continent.asia .side-panel .content .content-problem-asia div {
+  display: block;
+}
+main.continent.asia .side-panel .content .content-problem-asia div .sliderticks {
+  display: flex;
 }
 main.continent.africa .side-panel .content .content-problem-africa {
   display: block;
 }
+main.continent.africa .side-panel .content .content-problem-africa div {
+  display: block;
+}
+main.continent.africa .side-panel .content .content-problem-africa div .sliderticks {
+  display: flex;
+}
 main.continent.europe .side-panel .content .content-problem-europe {
   display: block;
+}
+main.continent.europe .side-panel .content .content-problem-europe div {
+  display: block;
+}
+main.continent.europe .side-panel .content .content-problem-europe div .sliderticks {
+  display: flex;
 }
 main.continent.northAmerica .side-panel .content .content-problem-northAmerica {
   display: block;
 }
+main.continent.northAmerica .side-panel .content .content-problem-northAmerica div {
+  display: block;
+}
+main.continent.northAmerica .side-panel .content .content-problem-northAmerica div .sliderticks {
+  display: flex;
+}
 main.continent.southAmerica .side-panel .content .content-problem-southAmerica {
   display: block;
+}
+main.continent.southAmerica .side-panel .content .content-problem-southAmerica div {
+  display: block;
+}
+main.continent.southAmerica .side-panel .content .content-problem-southAmerica div .sliderticks {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */

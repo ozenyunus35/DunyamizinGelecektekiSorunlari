@@ -172,11 +172,80 @@
                 overflow-x: hidden;
                 overflow-y: scroll;
                 background-color: map-get($color, "white");
-                padding: 30px;
+                padding: 75px 80px;
                 .content-problem {
                     display: none;
                     div {
                         display: none;
+                        h1 {
+                            @include fontSize(customHood);
+                            font-weight: map-get($font-weight, "b");
+                            color: map-get($color, "ocean-name");
+                            margin-bottom: 40px;
+                        }
+                        .select-years {
+                            margin-bottom: 30px;
+                            input[type="range"] {
+                                -webkit-appearance: none;
+                                appearance: none;
+                                width: 100%;
+                                cursor: pointer;
+                                outline: none;
+                                border-radius: 15px;
+                                height: 6px;
+                                background: map-get($color, "sea");
+                                &::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    height: 30px;
+                                    width: 30px;
+                                    background-image: url("../../img/favicon.ico");
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                                &::-moz-range-thumb {
+                                    height: 30px;
+                                    width: 30px;
+                                    background-image: url("../../img/favicon.ico");
+                                    background-size: cover;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .sliderticks {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 0 3px;
+                                flex-direction: column;
+                                writing-mode: vertical-lr;
+                                width: 100%;
+                                margin-top: 10px;
+                                cursor: default;
+                                @include notSelection;
+                                span {
+                                    @include fontSize(mtxt);
+                                    font-weight: map-get($font-weight, "r");
+                                    color: map-get($color, "ocean-name");
+                                }
+                            }
+                        }
+                        .charts {
+                            display: flex !important;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 50px;
+                            .chart {
+                                width: 100%;
+                                h3 {
+                                    @include fontSize(mhood);
+                                    font-weight: map-get($font-weight, "m");
+                                    color: map-get($color, "ocean-name");
+                                    margin-bottom: 20px;
+                                }
+                                .time {
+                                    display: flex;
+                                }
+                            }
+                        }
                     }
                 }
                 .content-article {}
@@ -210,6 +279,12 @@
                 .content {
                     .content-problem-oceania {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }
@@ -219,6 +294,12 @@
                 .content {
                     .content-problem-asia {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }
@@ -228,6 +309,12 @@
                 .content {
                     .content-problem-africa {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }
@@ -237,6 +324,12 @@
                 .content {
                     .content-problem-europe {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }
@@ -246,6 +339,12 @@
                 .content {
                     .content-problem-northAmerica {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }
@@ -255,6 +354,12 @@
                 .content {
                     .content-problem-southAmerica {
                         display: block;
+                        div {
+                            display: block;
+                            .sliderticks {
+                                display: flex;
+                            }
+                        }
                     }
                 }
             }

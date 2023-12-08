@@ -42,6 +42,14 @@ $(".map svg g").click(function() {
     }
 })
 
+// Years input range background
+const $sliderEl = $(".content .content-problem .range");
+
+$sliderEl.on("input", function(event) {
+    const progress = (event.target.value / $sliderEl.prop("max")) * 100;
+    $sliderEl.css("background", `linear-gradient(to right, #34BCC2 ${progress}%, #C6D6E6 ${progress}%)`);
+});
+
 // Preloader
 $(window).on('load', function() {
     $('#preloader').hide();

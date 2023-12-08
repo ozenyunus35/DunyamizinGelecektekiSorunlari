@@ -12,28 +12,278 @@ button {
     cursor: pointer;
 }
 
+main {
+    .side-panel {
+        .content {
+            .content-problem {
+                div {
+                    .charts {
+                        .chart {
+                            // .human-population {
+                            //     // Okyanusya
+                            //     #raphael-paper-188 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-190-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Asya
+                            //     #raphael-paper-885 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-887-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Afrika
+                            //     #raphael-paper-1582 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1584-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // G-Amerika
+                            //     #raphael-paper-2279 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2281-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            // }
+                            // .ozone-layer {
+                            //     // Okyanusya
+                            //     #raphael-paper-501 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-503-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-588 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-590-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Asya
+                            //     #raphael-paper-1198 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1200-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-1285 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1287-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Afrika
+                            //     #raphael-paper-1895 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1897-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-1982 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1984-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // G-Amerika
+                            //     #raphael-paper-2592 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2594-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-2679 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2681-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            // }
+                            // .temperature-chart {
+                            //     // Okyanusya
+                            //     #raphael-paper-0 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-94 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-96-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Asya
+                            //     #raphael-paper-697 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-699-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-791 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-793-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Afrika
+                            //     #raphael-paper-1394 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1396-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-1488 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1490-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // G-Amerika
+                            //     #raphael-paper-2091 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2093-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     #raphael-paper-2185 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2187-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            // }
+                            // .animal-population {
+                            //     // Okyanusya
+                            //     #raphael-paper-1028 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1030-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Asya
+                            //     #raphael-paper-331 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-333-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // Afrika
+                            //     #raphael-paper-1725 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-1727-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            //     // G-Amerika
+                            //     #raphael-paper-2422 {
+                            //         background-color: transparent !important;
+                            //     }
+                            //     .raphael-group-2424-background {
+                            //         rect {
+                            //             fill: transparent;
+                            //             stroke: none;
+                            //         }
+                            //     }
+                            // }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ::selection {
 //     color: rgb(15, 15, 75);
 //     background-color: map-get($color, "orange");
 // }
 // Scroll
-// body {
-//     &::-webkit-scrollbar {
-//         width: 7px;
-//     }
-//     &::-webkit-scrollbar-track {
-//         background: map-get($color, "white");
-//     }
-//     &::-webkit-scrollbar-thumb {
-//         background: map-get($color, "orange");
-//         border-radius: 10px;
-//     }
-//     &.dark {
-//         &::-webkit-scrollbar-track {
-//             background: map-get($color, "black");
-//         }
-//     }
-// }
+.content {
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background: map-get($color, "sea");
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #34BCC2;
+    }
+}
+
 // Cursor
 // body {
 //     cursor: map-get($cursor-default, "l-default"), auto;
