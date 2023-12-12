@@ -387,6 +387,101 @@ main .side-panel .content .content-problem div .charts .chart h3 {
 main .side-panel .content .content-problem div .charts .chart .time {
   display: flex;
 }
+main .side-panel .content .content-article h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 40px;
+}
+main .side-panel .content .content-article .articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+main .side-panel .content .content-article .articles .article {
+  width: calc(50% - 50px);
+  cursor: pointer;
+}
+main .side-panel .content .content-article .articles .article .img {
+  aspect-ratio: 16/9;
+  background-color: red;
+}
+main .side-panel .content .content-article .articles .article .article-content {
+  background-color: #C6D6E6;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .side-panel .content .content-article .articles .article .article-content h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 1200px) {
+  main .side-panel .content .content-article .articles .article .article-content h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .side-panel .content .content-article .articles .article .article-content h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .side-panel .content .content-article .articles .article .article-content h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .side-panel .content .content-article .articles .article .article-content h3 {
+    font-size: 12px;
+  }
+}
+main .side-panel .content .content-article .articles .article .article-content p {
+  font-size: 14px;
+}
+@media screen and (max-width: 1200px) {
+  main .side-panel .content .content-article .articles .article .article-content p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main .side-panel .content .content-article .articles .article .article-content p {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .side-panel .content .content-article .articles .article .article-content p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main .side-panel .content .content-article .articles .article .article-content p {
+    font-size: 8px;
+  }
+}
+main .side-panel .content .content-article .articles .article .article-content p:nth-child(2) {
+  font-weight: 500;
+  color: #34BCC2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .side-panel .content .content-article .articles .article .article-content p:nth-child(2) svg {
+  fill: #34BCC2;
+}
+main .side-panel .content .content-article .articles .article .article-content p:nth-child(3) {
+  font-weight: 400;
+  color: #333333;
+  opacity: 0.5;
+  margin-top: -5px;
+}
 main .side-panel.active {
   right: 0;
 }

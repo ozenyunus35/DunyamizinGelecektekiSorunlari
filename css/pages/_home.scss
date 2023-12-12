@@ -248,7 +248,64 @@
                         }
                     }
                 }
-                .content-article {}
+                .content-article {
+                    h1 {
+                        @include fontSize(customHood);
+                        font-weight: map-get($font-weight, "b");
+                        color: map-get($color, "ocean-name");
+                        margin-bottom: 40px;
+                    }
+                    .articles {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 50px;
+                        .article {
+                            width: calc(50% - 50px);
+                            cursor: pointer;
+                            .img {
+                                aspect-ratio: 16/9;
+                                background-color: red;
+                                img {}
+                            }
+                            .article-content {
+                                background-color: #C6D6E6;
+                                padding: 15px 20px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+                                h3 {
+                                    @include fontSize(mtxt);
+                                    font-weight: map-get($font-weight, "r");
+                                    color: map-get($color, "ocean-name");
+                                    display: -webkit-box;
+                                    -webkit-line-clamp: 2;
+                                    -webkit-box-orient: vertical;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                p {
+                                    @include fontSize(stxt);
+                                    &:nth-child(2) {
+                                        font-weight: map-get($font-weight, "m");
+                                        color: #34BCC2;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        svg {
+                                            fill: #34BCC2;
+                                        }
+                                    }
+                                    &:nth-child(3) {
+                                        font-weight: map-get($font-weight, "r");
+                                        color: map-get($color, "ocean-name");
+                                        opacity: 0.5;
+                                        margin-top: -5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &.active {
                 right: 0;
