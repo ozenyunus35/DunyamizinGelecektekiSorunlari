@@ -400,11 +400,19 @@ main .side-panel .content .content-article .articles {
 }
 main .side-panel .content .content-article .articles .article {
   width: calc(50% - 50px);
-  cursor: pointer;
 }
 main .side-panel .content .content-article .articles .article .img {
   aspect-ratio: 16/9;
   background-color: red;
+  overflow: hidden;
+}
+main .side-panel .content .content-article .articles .article .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: 400ms;
 }
 main .side-panel .content .content-article .articles .article .article-content {
   background-color: #C6D6E6;
@@ -481,6 +489,9 @@ main .side-panel .content .content-article .articles .article .article-content p
   color: #333333;
   opacity: 0.5;
   margin-top: -5px;
+}
+main .side-panel .content .content-article .articles .article:hover .img img {
+  transform: scale(1.05);
 }
 main .side-panel.active {
   right: 0;

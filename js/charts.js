@@ -7,7 +7,6 @@ $(".temperature-chart.now").insertFusionCharts({
     dataSource: {
         chart: {
             caption: "Simdi",
-            // subcaption: "Simdiki Zaman",
             lowerlimit: "0",
             upperlimit: "100",
             numbersuffix: "°C",
@@ -31,7 +30,6 @@ $(".temperature-chart.change").insertFusionCharts({
     dataSource: {
         chart: {
             caption: "Degisen Zaman",
-            // subcaption: "Istenilen Zaman",
             lowerlimit: "0",
             upperlimit: "100",
             numbersuffix: "°C",
@@ -85,10 +83,6 @@ $(".animal-population").insertFusionCharts({
     dataFormat: "json",
     dataSource: {
         chart: {
-            // caption: "App Publishing Trend",
-            // subcaption: "2012-2016",
-            // xaxisname: "Years",
-            // yaxisname: "Total number of apps in store",
             formatnumberscale: "1",
             plottooltext: "<b>$dataValue</b> apps were available on <b>$seriesName</b> in $label",
             theme: "gammel"
